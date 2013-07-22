@@ -2138,9 +2138,7 @@ cmd_server (struct session *sess, char *tbuf, char *word[], char *word_eol[])
     gint port = -1;
     gchar *pass = NULL;
     gchar *channel = NULL;
-#ifdef GNUTLS
     gint use_ssl = FALSE;
-#endif
     gboolean use_uri = FALSE;
     server *serv = sess->server;
     CommandOption options[] = {

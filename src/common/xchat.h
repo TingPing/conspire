@@ -1,9 +1,9 @@
 
-#include <glib/gslist.h>
+/*#include <glib/gslist.h>
 #include <glib/glist.h>
 #include <glib/gutils.h>
 #include <glib/giochannel.h>
-#include <glib/gstrfuncs.h>
+#include <glib/gstrfuncs.h> */
 #include <time.h>			/* need time_t */
 #include <glib.h>
 

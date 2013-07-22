@@ -134,8 +134,8 @@ fe_tray_set_balloon(const char *title, const char *text)
 		return;
 
 	stext = strip_color(text, -1, STRIP_ALL);
-	n = notify_notification_new(title, stext, NULL, NULL);
-	notify_notification_attach_to_status_icon(n, sticon);
+	n = notify_notification_new(title, stext, NULL);
+	/* notify_notification_attach_to_status_icon(n, sticon); */
 	notify_notification_set_timeout(n, 20000);
 	notify_notification_show(n, NULL);
 
